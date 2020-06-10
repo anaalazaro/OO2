@@ -7,6 +7,7 @@ Class {
 { #category : #accessing }
 Paused >> finish:aTodoitem [
 aTodoitem estado: Finished new.
+aTodoitem tiempoFin:DateAndTime now.
 ]
 
 { #category : #accessing }

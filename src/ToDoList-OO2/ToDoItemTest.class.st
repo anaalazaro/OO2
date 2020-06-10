@@ -14,7 +14,7 @@ Class {
 { #category : #running }
 ToDoItemTest >> setUp [
 todoitem:= ToDoItem name: 'Tarea'.
-finished:= Finished crearFin .
+finished:= Finished new.
 inprogress:=InProgress new . 
 paused:= Paused new.
 pending:= Pending new.

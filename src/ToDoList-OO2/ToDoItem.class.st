@@ -5,7 +5,8 @@ Class {
 		'nombre',
 		'estado',
 		'comment',
-		'tiempo'
+		'tiempo',
+		'tiempofin'
 	],
 	#category : #'ToDoList-OO2'
 }
@@ -73,6 +74,16 @@ ToDoItem >> tiempo [
 { #category : #accessing }
 ToDoItem >> tiempo: anObject [
 	tiempo := anObject
+]
+
+{ #category : #accessing }
+ToDoItem >> tiempofin [
+	^ tiempofin
+]
+
+{ #category : #accessing }
+ToDoItem >> tiempofin: anObject [
+	tiempofin := anObject
 ]
 
 { #category : #'as yet unclassified' }

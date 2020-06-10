@@ -7,6 +7,7 @@ Class {
 { #category : #accessing }
 InProgress >> finish:aTodoitem [
 aTodoitem estado: Finished new.
+aTodoitem tiempoFin: DateAndTime now.
 ]
 
 { #category : #accessing }
