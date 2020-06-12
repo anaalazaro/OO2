@@ -30,6 +30,11 @@ Tierra >> proporcionAgua [
 ]
 
 { #category : #'as yet unclassified' }
+Tierra >> proporcionDesperdicio [ 
+^ self proporcionTierra * 0.05
+]
+
+{ #category : #'as yet unclassified' }
 Tierra >> proporcionTierra [ 
 ^1.
 ]

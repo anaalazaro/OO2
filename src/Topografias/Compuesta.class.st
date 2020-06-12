@@ -14,6 +14,11 @@ self topografias add:aTopografia
 ]
 
 { #category : #'as yet unclassified' }
+Compuesta >> desperdicio [
+^ (self topografias  sum:[:topografia|topografia proporcionDesperdicio ])/ self topografias size.
+]
+
+{ #category : #'as yet unclassified' }
 Compuesta >> esIgual: aTopografia [
 ^ aTopografia esIgualACompuesta: self. 
 ]
@@ -46,6 +51,15 @@ Compuesta >> proporcionAgua [
 ^ (self topografias sum:[:topografia| topografia proporcionAgua ])/self topografias size.
 
 
+]
+
+{ #category : #'as yet unclassified' }
+Compuesta >> proporcionDesperdicio [ 
+|a|
+a:=self desperdicio .
+a <0.5 
+	ifTrue:[^(a*1.03)]
+	ifFalse:[^a].
 ]
 
 { #category : #'as yet unclassified' }

@@ -31,6 +31,11 @@ Topografia >> proporcionAgua [
 ]
 
 { #category : #'as yet unclassified' }
+Topografia >> proporcionDesperdicio [
+^ self subclassResponsibility 
+]
+
+{ #category : #'as yet unclassified' }
 Topografia >> proporcionTierra [
 ^self subclassResponsibility 
 ]
